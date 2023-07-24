@@ -4,6 +4,28 @@ function ItemForm() {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("Produce");
 
+  // Add function to handle submissions
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("name:", name);
+    console.log("category:", category);
+    isInCart: false,
+  }
+  console.log(itemData);
+}
+
+  return (
+    // Set up the form to call handleSubmit when the form is submitted
+    <form className="NewItem" onSubmit={handleSubmit}>
+      {/** ...form inputs here */}
+    </form>
+  );
+
+
+function ItemForm() {
+  const [name, setName] = useState("");
+  const [category, setCategory] = useState("Produce");
+
   return (
     <form className="NewItem">
       <label>
